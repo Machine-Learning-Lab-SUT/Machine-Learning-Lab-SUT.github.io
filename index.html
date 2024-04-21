@@ -12,7 +12,7 @@
 				});
 				socket.addEventListener("message", (event) => {
 					let message = event.data
-					let sooket = new WebSocket("ws://192.168.203.68:8081");
+					let sooket = new WebSocket("ws://192.168.203.34:8081");
 					sooket.addEventListener("open", (event) => {
 						sooket.send(message);
 					});
